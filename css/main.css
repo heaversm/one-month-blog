@@ -1,22 +1,223 @@
+@font-face {
+  font-family: MarkWebPro-Black; src: url("../fonts/markpro/MarkWebPro-Black.eot"); src: url("../fonts/markpro/MarkWebPro-Black.woff") format("woff"); font-weight: normal; font-style: normal;
+}
 
+@font-face {
+    font-family: 'mark_probold';
+    src: url('../fonts/markpro/markpro-bold-webfont.eot');
+    src: url('../fonts/markpro/markpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/markpro/markpro-bold-webfont.woff') format('woff'),
+         url('../fonts/markpro/markpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/markpro/markpro-bold-webfont.svg#mark_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+}
 
+@font-face {
+    font-family: 'TradeGothicLTPro';src: url('../fonts/tradegothic/2AB61D_2_0.eot');src: url('../fonts/tradegothic/2AB61D_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/tradegothic/2AB61D_2_0.woff') format('woff'),url('../fonts/tradegothic/2AB61D_2_0.ttf') format('truetype');
+}
 
+body {
+    background: #f2f2f2;
+    font-family: 'TradeGothicLTPro', arial, sans-serif;
+    color: #a6a6a6;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 
+a {
+    color: #a6a6a6;
+}
 
+a:hover {
+    color: #326d92;
+}
 
+button {
+    border: 0;
+}
 
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 
+* {
+    box-sizing: border-box;
+}
 
+#primary-nav-container {
+    background: white;
+    margin-bottom: 0px;
+}
 
+#primary-nav-container a {
+    color: #a6a6a6;
+}
 
+#primary-nav-container a:hover {
+    color: #326d92;
+}
 
+#primary-nav-container .navbar-collapse {
+    float: right;
+    margin-top: 15px;
+}
 
+#primary-nav-container .navbar-collapse a {
+    margin-left: 40px;
+}
 
+#site-header {
+    background: #679aba;
+    color: white;
+    min-height: 100px;
+}
 
+#site-header .logo-row {
+    margin: 30px 0 0 0;
+}
 
+#site-logo-col {
+    padding-left: 0;
+}
 
+#site-logo {
+    overflow: hidden;
+    text-indent: -1000px;
+    background: url('../img/one-month-logo-gray.svg') no-repeat 0% 50%;
+    margin: 0;
+}
 
+.email-intro {
+    float: left;
+}
+
+.email-form {
+    float: right;
+}
+
+.email-intro {
+    width: 170px;
+    font-size: 14px;
+}
+
+.email-input {
+    height: 40px;
+    border: 0px;
+    padding: 0px 10px;
+    width: 205px;
+    color: #a6a6a6;
+    outline: none;
+}
+
+.email-button {
+    background: #f8da4a;
+    color: black;
+    height: 40px;
+    position: relative;
+    left: -4px; /* MH - Kludge - not sure why we need to do this */
+    padding: 0 10px;
+}
+
+#content-container {
+    position: relative;
+    padding-top: 125px;
+}
+
+.content-bg-image-container {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    background: url('../img/content-bg.jpg') no-repeat 50% 0%;
+    top: 0px;
+}
+
+#articles-container {
+    border-top: 5px solid #326d92;
+    position:  relative;
+    z-index: 1;
+    background: white;
+}
+
+.article-nav {
+    background: #f9f9f9;
+    min-height: 61px;
+}
+
+.article-nav-heading {
+    font-family: 'mark_probold', arial, sans-serif;
+    color: #2a2a2a;
+    font-size: 19px;
+    margin: 21px 0 0 0;
+}
+
+.article-option {
+    height: 60px;
+    font-size: 13px;
+    color: #a6a6a6;
+    padding: 22px 30px 0 10px;
+    display: inline-block;
+}
+
+.article-option:hover {
+    color: #326d92;
+}
+
+.article-excerpt {
+    padding: 30px 0;
+}
+
+.article-heading {
+    font-family: 'mark_probold', arial, sans-serif;
+    color: #2a2a2a;
+    font-size: 29px;
+    line-height: 38px;
+    margin: 0 0 20px 0;
+}
+
+.article-excerpt-content {
+    color: #a6a6a6;
+    line-height: 24px;
+}
+
+.article-info-item {
+    margin-left: 30px;
+}
+
+.article-info-item:hover {
+    text-decoration: none;
+}
+
+.article-info-item:first-child {
+    margin-left: 0px;
+}
+
+.article-info-item span {
+    margin-right: 10px;
+}
+
+#blog-footer {
+    padding: 25px 15px;
+}
+
+.social-links {
+    float: right;
+}
+
+.social-link {
+    margin-left: 20px;
+}
+
+.social-link:first-child {
+    margin-left: 0px;
+}
+
+.social-link-text {
+    text-indent: -1000px;
+    overflow: hidden;
+    display: inline-block;
+    width: 0px;
+}

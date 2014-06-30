@@ -6,29 +6,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>One Month Blog | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
-
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="blog">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="primary-nav-container" class="navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,71 +30,102 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          <!-- nav stuff here-->
+          <a href="#">HOME</a>
+          <a href="#">COURSES</a>
+          <a href="#">BLOG</a>
+          <a href="#">SIGN IN</a>
         </div><!--/.navbar-collapse -->
       </div>
-    </div>
+    </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <header id="site-header">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <div class="row logo-row">
+          <div id="site-logo-col" class="col-md-5">
+            <h1 id="site-logo">One Month</h1>
+          </div>
+          <div class="col-md-7">
+            <p class="email-intro">Learn how to hack learning with One Month Updates</p>
+            <div class="email-form">
+              <input type="text" placeholder="EMAIL ADDRESS" class="email-input">
+              <button class="email-button" type="button">GET UPDATES</button>
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
+
+    <div id="content-container" >
+
+      <div class="content-bg-image-container">
+      </div>
+
+      <section id="articles-container" class="container">
+        <nav class="article-nav row">
+          <h2 class="article-nav-heading col-md-6">A Blog on Accelerated Learning</h2>
+          <div class="article-options col-md-offset-1 col-md-5">
+            <a class="article-option" href="">ARCHIVES</a>
+            <a class="article-option" href="">CATEGORIES</a>
+          </div>
+        </nav>
+        <div class="row article-excerpt">
+          <div class="col-md-4">
+            <img src="img/tmp/post-thumb.jpg" alt="Post Thumb" class="article-thumb">
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <h3 class="article-heading">Google’s Launches the “Made with Code” Campaign</h3>
+            <p class="article-excerpt-content">
+              Google recently invested $50million in the project, and has hired comedian Mindy Kaling as a spokeswoman. The site is focused on bringing code to women, but it’s inspirational for any girl (or boy) who ever thought that coding was only for nerds.
+            </p>
+            <div class="article-info">
+              <a href="#" class="article-info-item article-author"><span class="fa fa-pencil"></span>CHRIS CASTIGLIONE</a>
+              <a href="#" class="article-info-item article-date"><span class="fa fa-calendar-o"></span>JUNE 24, 2014</a>
+              <a href="#" class="article-info-item article-comments"><span class="fa fa-comment"></span>COMMENTS</a>
+            </div>
+         </div>
+        </div>
+        <hr>
+        <div class="row article-excerpt">
+          <div class="col-md-4">
+            <img src="img/tmp/post-thumb.jpg" alt="Post Thumb" class="article-thumb">
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <h3 class="article-heading">Google’s Launches the “Made with Code” Campaign</h3>
+            <p class="article-excerpt-content">
+              Google recently invested $50million in the project, and has hired comedian Mindy Kaling as a spokeswoman. The site is focused on bringing code to women, but it’s inspirational for any girl (or boy) who ever thought that coding was only for nerds.
+            </p>
+            <div class="article-info">
+              <a href="#" class="article-info-item article-author"><span class="fa fa-pencil"></span>CHRIS CASTIGLIONE</a>
+              <a href="#" class="article-info-item article-date"><span class="fa fa-calendar-o"></span>JUNE 24, 2014</a>
+              <a href="#" class="article-info-item article-comments"><span class="fa fa-comment"></span>COMMENTS</a>
+            </div>
+         </div>
+        </div>
+      </section>
+
+      <footer id="blog-footer" class="container">
+        <div class="row">
+          <div class="col-md-9">&copy; One Month 2014</div>
+          <nav class="col-md-3 social-links-container">
+            <div class="social-links">
+              <a href="#" class="social-link fa fa-rss"><span class="social-link-text">RSS Feed</span></a>
+              <a href="#" class="social-link fa fa-twitter"><span class="social-link-text">Twitter</span></a>
+              <a href="#" class="social-link fa fa-facebook"><span class="social-link-text">Facebook</span></a>
+            </div>
+          </nav>
+        </div>
+      </footer>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-      <hr>
+      <script src="js/vendor/bootstrap.min.js"></script>
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+      <script src="js/main.js"></script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>
