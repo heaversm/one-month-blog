@@ -47,7 +47,7 @@
           <div id="site-logo-col" class="col-md-5">
             <h1 id="site-logo">One Month</h1>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 email-form-container">
             <p class="email-intro">Learn how to hack learning with One Month Updates</p>
             <div class="email-form">
               <input type="text" placeholder="EMAIL ADDRESS" class="email-input">
@@ -67,8 +67,21 @@
         <nav class="article-nav row">
           <h2 class="article-nav-heading col-md-6">A Blog on Accelerated Learning</h2>
           <div class="article-options col-md-offset-1 col-md-5">
-            <a class="article-option" href="">ARCHIVES</a>
-            <a class="article-option" href="">CATEGORIES</a>
+            <div class="article-options-container">
+              <a class="article-option" href="#"><span class="article-option-title">ARCHIVES</span></a>
+              <span class="article-option subnav">
+                <span class="article-option-title">CATEGORIES</span>
+                <nav class="article-option-subnav">
+                  <a class="article-option-subnav-item" href="#">RAILS</a>
+                  <a class="article-option-subnav-item" href="#">HTML</a>
+                  <a class="article-option-subnav-item" href="#">GROWTH HACKING</a>
+                  <a class="article-option-subnav-item" href="#">JOBS</a>
+                  <a class="article-option-subnav-item" href="#">OTHER</a>
+                </nav>
+              </span>
+            </div>
+
+
           </div>
         </nav>
         <div class="row article-excerpt">
@@ -122,10 +135,13 @@
 
       <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
       <script src="js/vendor/bootstrap.min.js"></script>
-
       <script src="js/main.js"></script>
+      <script>
+      $(document).ready(function(){
+        mainModule.init();
+      });
+      </script>
 
     </body>
 </html>
