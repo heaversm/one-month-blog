@@ -141,6 +141,7 @@ hr {
     overflow: hidden;
     position: absolute;
     background: url('../img/content-bg.jpg') no-repeat 50% 0%;
+    background-size: 100% auto;
     top: 0px;
 }
 
@@ -341,6 +342,10 @@ hr {
         left: 0px;
         display: block;
         margin-top: 10px;
+    }
+
+    .article-thumb, .article-thumb-container {
+        width: 100%;
     }
 
 }
