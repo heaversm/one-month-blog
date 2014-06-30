@@ -297,6 +297,10 @@ hr {
         float: left;
     }
 
+    .article-option:first-child {
+        margin-left: -10px; /* MH - must be equal to the left padding value set on the article option */
+    }
+
     .article-thumb {
         margin-bottom: 20px;
     }
