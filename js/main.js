@@ -30,7 +30,13 @@ var mainModule = (function($, window) {
   }
 
   onArticleOptionClick = function(){
-    $(this).toggleClass('active');
+    var isActive = $(this).hasClass('active');
+    if (isActive){
+        $(this).removeClass('active');
+    } else {
+        $('.article-option.subnav').removeClass('active');
+        $(this).addClass('active');
+    }
   }
 
 
