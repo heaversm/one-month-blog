@@ -70,7 +70,11 @@ hr {
 }
 
 #primary-nav-container .navbar-collapse a {
-    margin-left: 40px;
+    margin-left: 20px;
+}
+
+#primary-nav-container .navbar-collapse a:first-child {
+    margin-left: 0px;
 }
 
 .navbar-toggle .icon-bar {
@@ -119,6 +123,7 @@ hr {
     width: 205px;
     color: #a6a6a6;
     outline: none;
+    border-radius: 0px;
 }
 
 .email-button {
@@ -457,6 +462,14 @@ hr {
     .sidebar-img {
         width: 132px;
         height: auto;
+    }
+
+    .article-byline .bullet {
+        display: none;
+    }
+
+    .article-byline .byline-author {
+        display: block;
     }
 
 }
