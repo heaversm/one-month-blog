@@ -66,7 +66,7 @@ hr {
 
 #primary-nav-container .navbar-collapse {
     float: right;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #primary-nav-container .navbar-collapse a {
@@ -79,6 +79,10 @@ hr {
 
 .navbar-toggle .icon-bar {
     background: #2a2a2a;
+}
+
+.logo-container {
+    padding-right: 0px;
 }
 
 #site-header {
@@ -99,28 +103,28 @@ hr {
 #site-logo {
     overflow: hidden;
     text-indent: -1000px;
-    background: url('../img/one-month-logo-gray.svg') no-repeat 0% 50%;
-    margin: 0;
-}
-
-.email-intro {
+    background: url('../img/logo-one-month.png') no-repeat 0% 50%;
+    margin: 10px 0;
     float: left;
+    width: 192px;
+    background-size: 100% auto;
 }
 
-.email-form {
-    float: right;
+.email-form-container {
+    padding-right: 0px;
 }
 
 .email-intro {
-    width: 170px;
     font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .email-input {
     height: 40px;
     border: 0px;
     padding: 0px 10px;
-    width: 205px;
+    width: 272px;
     color: #a6a6a6;
     outline: none;
     border-radius: 0px;
@@ -137,15 +141,15 @@ hr {
 
 #content-container {
     position: relative;
-    padding-top: 125px;
+    padding: 50px 0 50px 0;
 }
 
 .content-bg-image-container {
-    height: 250px;
+    height: 295px;
     width: 100%;
     overflow: hidden;
     position: absolute;
-    background: url('../img/content-bg.jpg') no-repeat 50% 0%;
+    background: url('../img/content-bg.jpg') no-repeat 50% 50%;
     background-size: 100% auto;
     top: 0px;
 }
@@ -230,6 +234,10 @@ hr {
 
 .article-option-subnav-item:nth-child(even){
     background: #f6f6f6;
+}
+
+.article-main .article-byline {
+    color: #a6a6a6;
 }
 
 .article-excerpt {
@@ -337,6 +345,9 @@ hr {
 .article-main p {
     line-height: 24px;
     margin-bottom: 15px;
+    letter-spacing: .02em;
+    font-size: 18px;
+    color: #3c3c3c;
 }
 
 .article-main .article-quote {
@@ -353,7 +364,7 @@ hr {
 }
 
 .article-main strong {
-    color: #666;
+    color: #2a2a2a;
 }
 
 .article-image {
@@ -395,13 +406,7 @@ hr {
     }
 
     .email-form-container {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-
-    .email-intro {
-        display: none;
+        float: right;
     }
 
     .article-sidebar {
@@ -420,22 +425,17 @@ hr {
         margin-top: 20px;
     }
 
-    .email-form-container {
-        padding: 20px 20px 20px 0;
-        position: relative;
+    .content-bg-image-container {
+        background-size: 150% auto;
     }
 
-    .email-form {
+    .email-form-container {
         float: none;
     }
 
-    .email-button, .email-input {
-        width: 100%;
-    }
-
     .email-button {
-        left: 0px;
         display: block;
+        position: static;
         margin-top: 10px;
     }
 
