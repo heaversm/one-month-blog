@@ -386,6 +386,10 @@ hr {
 
 @media all and (max-width: 991px){
 
+    .email-form-container {
+        padding-right: 15px;
+    }
+
     .article-nav-heading {
         margin-bottom: 20px;
     }
@@ -429,7 +433,7 @@ hr {
     }
 }
 
-@media all and (max-width: 649px){
+@media all and (max-width: 649px){ /* MH - this breakpoint is a bit arbitrary with respect to bootstrap, but seems to work well for the site */
 
     .content-bg-image-container {
         background-size: auto 100%;
@@ -478,7 +482,7 @@ hr {
 
 }
 
-@media all and (max-width: 479px){
+@media all and (max-width: 479px){ /* MH - if the -5px setting on the email button weren't necessary, this breakpoint could be eliminated entirely */
 
     .email-button {
         left: 0px;
